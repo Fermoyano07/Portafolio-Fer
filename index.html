@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('O98YoCaU4oQTLmA7E')
+    </script>
+</head>
+
+<body>
+    <!--menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fernando</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/img-Fer.png" alt="">
+            </div>
+            <h1>Fernando Daniel Moyano</h1>
+            <h2>Desarollador de Software</h2>
+            <h2>Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola soy Fernando,</span> un desarrollador de software con formación
+                técnica y una gran pasión por la programación. Estudié la Tecnicatura en Desarrollo de Software
+                (2022-2024) en la Universidad Blas Pascal, donde
+                adquirí una base sólida en programación. Comencé con pseudocódigo y di mis primeros pasos en
+                Java con NetBeans, desarrollando aplicaciones para resolver problemas matemáticos.
+            </p>
+            <p>Más adelante en la carrera, desarrollé múltiples proyectos prácticos más complejos, con patrones de
+                diseño como MVC, sistemas
+                CRUD y aplicaciones con programación orientada a
+                objetos, integrando bases de datos y servidores.
+            </p>
+            <p>
+                Finalizando la carrera, me especialicé en desarrollo web, ampliando mis habilidades con
+                herramientas
+                como Visual Studio y tecnologías como C#, JavaScript, Angular, .NET y SQL. También adquirí
+                experiencia en el uso de APIs y herramientas de testing como Postman y JMeter.
+            </p>
+            <p>Actualmente, me encuentro en la búsqueda de mi primer empleo en el área de desarrollo, mientras
+                sigo aprendiendo y perfeccionando mis conocimientos a través de proyectos personales. Estoy entusiasmado
+                de poder aportar mis habilidades y aprender en un entorno profesional.
+            </p>
+
+            <div class="fila">
+
+                <!-- Experiencia -->
+                <div class="col">
+                    <h3>Experiencia</h3>
+                    <div class="experiencia">
+                        <span>Prácticas Profesionales - Fundación Blas Pascal (FUPA)</span>
+                        <p>Realicé prácticas profesionales dentro de la carrera en FUPA, adquiriendo experiencia en
+                            desarrollo y análisis de software.</p>
+                    </div>
+                    <div class="experiencia">
+                        <span>Prácticas Profesionales - Kunan S.A.</span>
+                        <p>Desarrollé habilidades en programación y gestión de proyectos, participando en la
+                            implementación de soluciones tecnológicas.</p>
+                    </div>
+                    <div class="experiencia">
+                        <span>Prácticas Profesionales - Maxtich S.A.</span>
+                        <p>Trabajé en el análisis y mejora de sistemas dentro de la empresa, colaborando en el
+                            desarrollo de aplicaciones internas.</p>
+                    </div>
+                </div>
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-hiking"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Ejercicio</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Lectura</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Programación</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>Guitarra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Técnicas</h3>
+
+                    <h4>Lenguajes de Programación</h4>
+                    <div class="habilidad">
+                        <div class="icono-habilidad">
+                            <img src="img/icon-java.png" alt="Java">
+                            <img src="img/icon-javascript.png" alt="Javascript">
+                            <img src="img/icon-c.png" alt="C#">
+                        </div>
+                    </div>
+
+                    <h4>Frameworks y Librerías</h4>
+                    <div class="habilidad">
+                        <div class="icono-habilidad">
+                            <img src="img/icon-net.png" alt=".NET">
+                            <img src="img/icon-bootstrap.png" alt="Bootstrap">
+                            <img src="img/icon-angular.png" alt="Angular">
+                        </div>
+                    </div>
+
+                    <h4>Desarrollo Web y Frontend</h4>
+                    <div class="habilidad">
+                        <div class="icono-habilidad">
+                            <img src="img/icon-html.png" alt="HTML">
+                            <img src="img/icon-css.png" alt="CSS">
+                            <img src="img/icon-wordpress.png" alt="Wordpress">
+                        </div>
+                    </div>
+
+                    <h4>Bases de Datos</h4>
+                    <div class="habilidad">
+                        <div class="icono-habilidad">
+                            <img src="img/icon-sqlserver.png" alt="SQL Server">
+                            <img src="img/icon-mysql.png" alt="MySQL">
+                        </div>
+                    </div>
+
+                    <h4>Herramientas</h4>
+                    <div class="habilidad">
+                        <div class="icono-habilidad">
+                            <img src="img/icon-github.png" alt="Github">
+                            <img src="img/icon-git.png" alt="Git">
+                            <img src="img/icon-postman.png" alt="icon-postman">
+                            <img src="img/icon-swagger.png" alt="Swagger">
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades  Profesionales -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="contenedor-skills">
+                        <div class="skill-card">
+                            <i class="fas fa-comments"></i>
+                            <p>Comunicación efectiva</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-users"></i>
+                            <p>Trabajo en equipo</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Pensamiento crítico y analítico</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <p>Adaptabilidad y aprendizaje continuo</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-handshake"></i>
+                            <p>Habilidades Interpersonales</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <p>Creatividad</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-clipboard-check"></i>
+                            <p>Responsabilidad, compromiso y ética laboral</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-clock"></i>
+                            <p>Organización y gestión del tiempo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="section-proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/tienda.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/clinica.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/agenda.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <p>Si estás interesado en mi perfil o tienes alguna consulta, no dudes en contactarme.</p>
+
+            <form id="formulario-contacto" class="formulario-contacto" method="POST">
+                <div class="input-group">
+                    <input id="id_nombre" type="text" name="nombre" placeholder="Nombre" required>
+                    <input id="id_email" type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <textarea id="id_mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" id="button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Fernando Moyano. Desarrolador Full Stack.</p>
+    </footer>
+
+    <!-- DIV MENSAJE ALERTA-->
+    <div id="alerta" class="alerta">
+        <p id="alerta-mensaje"></p>
+        <button onclick="cerrarAlerta()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
