@@ -1,6 +1,6 @@
 📌 Mi Portafolio
 
-¡Hola soy Fernandp, Bienvenido a mi portafolio! Este proyecto es una muestra de mis habilidades como desarrollador web, construido con HTML, CSS y JavaScript.
+¡Hola soy Fernando, Bienvenido a mi portafolio! Este proyecto es una muestra de mis habilidades como desarrollador web, construido con HTML, CSS y JavaScript.
 
 🌟 Características
 
