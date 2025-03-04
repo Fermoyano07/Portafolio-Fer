@@ -401,6 +401,7 @@ html {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    color: #1CB698;
 }
 
 .section-proyectos .galeria {
@@ -450,6 +451,24 @@ html {
 .section-proyectos .galeria .proyecto .overlay:hover h3 {
     margin-bottom: 0px;
 }
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
 
 /* SECCIÓN CONTACTO */
 .contacto {
