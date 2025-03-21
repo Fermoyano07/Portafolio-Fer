@@ -231,6 +231,56 @@ html {
     margin-top: 5px;
 }
 
+.sobremi .btn-cv {
+    text-align: center;
+}
+
+/* BOTÓN DESCARGAR CV */
+.sobremi .btn-cv {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #1CB698;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, border-color 0.3s;
+    text-decoration: none;
+    margin: 30px auto;
+}
+
+.sobremi .btn-cv i {
+    font-size: 20px;
+}
+
+/* Efecto de overlay */
+.sobremi .btn-cv .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+}
+
+.sobremi .btn-cv:hover {
+    color: #1CB698;
+    border-color: #1CB698;
+}
+
+.sobremi .btn-cv:hover .overlay {
+    width: 100%;
+}
+
 
 /* Sección Habilidades */
 .habilidades {
