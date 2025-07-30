@@ -2,35 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-        emailjs.init('O98YoCaU4oQTLmA7E')
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init('O98YoCaU4oQTLmA7E');
     </script>
 </head>
 
 <body>
-    <!--menu encabezado-->
+    <!-- Header Menu -->
     <div class="contenedor-header">
         <header>
-            <div class="logo">
-                <a href="#">Fernando</a>
-            </div>
+            <div class="logo"><a href="#">Fernando</a></div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                    <li><a href="index-en.html"><i class="fas fa-globe"></i> ENGLISH</a> </li>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROJECTS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                    <li><a href="index.html"><i class="fas fa-globe"></i> ESPAÑOL</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -39,14 +36,14 @@
         </header>
     </div>
 
-    <!--Seccion inicio-->
+    <!-- Home Section -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
                 <img src="img/img-Fer.png" alt="">
             </div>
             <h1>Fernando Daniel Moyano</h1>
-            <h2>Técnico en Desarrollo de Software</h2>
+            <h2>Software Development Technician</h2>
             <h2>Backend Developer</h2>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/fermoyano-dev/" target="_blank"><i
@@ -56,96 +53,75 @@
         </div>
     </section>
 
-    <!-- Seccion Sobre mi -->
+    <!-- About Me -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>SOBRE MI</h2>
+            <h2>ABOUT ME</h2>
             <p>
-                <span>Hola, soy Fernando,</span> desarrollador Full Stack con formación técnica y
-                pasión por la programación. Estudié la Tecnicatura en Desarrollo de Software (2022-2024) en la
-                Universidad Blas Pascal, donde adquirí una base sólida en desarrollo web y backend.
+                <span>Hello, I'm Fernando,</span> a Full Stack developer with technical training and a passion for
+                coding. I studied Software Development (2022–2024) at Universidad Blas Pascal, where I built a strong
+                foundation in web and backend development.
             </p>
             <p>
-                Durante mi formación, trabajé con Java, .NET y C#, aplicando patrones de diseño como MVC, desarrollo de
-                sistemas CRUD y programación orientada a objetos. Además, integré bases de datos y servidores,
-                utilizando herramientas como SQL Server, Angular y APIs.
+                During my studies, I worked with Java, .NET and C#, applying design patterns such as MVC, CRUD systems,
+                and object-oriented programming. I also integrated databases and servers, using tools like SQL Server,
+                Angular and APIs.
             </p>
             <p>
-                Actualmente, busco mi primera oportunidad en IT para seguir aprendiendo y aportar mis conocimientos en
-                un entorno profesional. 🚀
+                I'm currently looking for my first opportunity in IT to continue learning and contribute my knowledge in
+                a professional environment. 🚀
             </p>
 
             <div class="fila">
-
-                <!-- Experiencia -->
+                <!-- Experience -->
                 <div class="col">
-                    <h3>Experiencia</h3>
+                    <h3>Experience</h3>
                     <div class="experiencia">
-                        <span>Prácticas Profesionales - Fundación Blas Pascal (FUPA)</span>
-                        <p>Realicé prácticas profesionales dentro de la carrera en FUPA, adquiriendo experiencia en
-                            desarrollo y análisis de software.</p>
+                        <span>Internship - Fundación Blas Pascal (FUPA)</span>
+                        <p>I completed internships at FUPA during my studies, gaining experience in software development
+                            and analysis.</p>
                     </div>
                     <div class="experiencia">
-                        <span>Prácticas Profesionales - Maxtich S.A.</span>
-                        <p>Trabajé en el análisis y mejora de sistemas dentro de la empresa, colaborando en el
-                            desarrollo de aplicaciones internas.</p>
+                        <span>Internship - Maxtich S.A.</span>
+                        <p>I contributed to system analysis and improvement, collaborating in the development of
+                            internal applications.</p>
                     </div>
                 </div>
 
-                <!--Intereses-->
+                <!-- Interests -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Interests</h3>
                     <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>Música</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fas fa-hiking"></i>
-                            <span>Viajar</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <span>Ejercicio</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>Lectura</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <span>Programación</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-guitar"></i>
-                            <span>Guitarra</span>
-                        </div>
+                        <div class="interes"><i class="fa-solid fa-headphones"></i><span>Music</span></div>
+                        <div class="interes"><i class="fas fa-hiking"></i><span>Traveling</span></div>
+                        <div class="interes"><i class="fa-solid fa-dumbbell"></i><span>Exercise</span></div>
+                        <div class="interes"><i class="fa-solid fa-book"></i><span>Reading</span></div>
+                        <div class="interes"><i class="fa-solid fa-laptop-code"></i><span>Coding</span></div>
+                        <div class="interes"><i class="fa-solid fa-guitar"></i><span>Guitar</span></div>
                     </div>
                 </div>
             </div>
 
             <div>
-                <a href="archivos/CV Fernando Moyano - Desarrollador.pdf"
-                    download="CV Fernando Moyano - Desarrollador.pdf" class="btn-cv">
-                    Descargar CV <i class="fa-solid fa-download"></i>
+                <a href="archivos/CV Fernando Moyano - Developer.pdf" download="CV Fernando Moyano - Developer.pdf"
+                    class="btn-cv">
+                    Download CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </a>
             </div>
-
-
         </div>
     </section>
 
-    <!-- Sección Habilidades -->
+    <!-- Skills -->
     <section class="habilidades" id="habilidades">
         <div class="contenido-seccion">
-            <h2>HABILIDADES</h2>
+            <h2>SKILLS</h2>
             <div class="fila">
-                <!-- Habilidades Técnicas -->
+                <!-- Technical Skills -->
                 <div class="col">
-                    <h3>Técnicas</h3>
+                    <h3>Technical</h3>
 
-                    <h4>Lenguajes de Programación</h4>
+                    <h4>Programming Languages</h4>
                     <div class="habilidad">
                         <div class="icono-habilidad">
                             <img src="img/icon-java.png" alt="Java">
@@ -154,16 +130,16 @@
                         </div>
                     </div>
 
-                    <h4>Frameworks y Librerías</h4>
+                    <h4>Frameworks & Libraries</h4>
                     <div class="habilidad">
                         <div class="icono-habilidad">
                             <img src="img/icon-net.png" alt=".NET">
                             <img src="img/icon-bootstrap.png" alt="Bootstrap">
-                            <!--<img src="img/icon-angular.png" alt="Angular">-->
+                            <!-- <img src="img/icon-angular.png" alt="Angular"> -->
                         </div>
                     </div>
 
-                    <h4>Desarrollo Web y Frontend</h4>
+                    <h4>Web & Frontend</h4>
                     <div class="habilidad">
                         <div class="icono-habilidad">
                             <img src="img/icon-html.png" alt="HTML">
@@ -172,7 +148,7 @@
                         </div>
                     </div>
 
-                    <h4>Bases de Datos</h4>
+                    <h4>Databases</h4>
                     <div class="habilidad">
                         <div class="icono-habilidad">
                             <img src="img/icon-sqlserver.png" alt="SQL Server">
@@ -180,67 +156,63 @@
                         </div>
                     </div>
 
-                    <h4>Herramientas</h4>
+                    <h4>Tools</h4>
                     <div class="habilidad">
                         <div class="icono-habilidad">
                             <img src="img/icon-github.png" alt="Github">
                             <img src="img/icon-git.png" alt="Git">
-                            <img src="img/icon-postman.png" alt="icon-postman">
+                            <img src="img/icon-postman.png" alt="Postman">
                             <img src="img/icon-swagger.png" alt="Swagger">
                         </div>
                     </div>
                 </div>
-                <!-- Habilidades  Profesionales -->
+
+                <!-- Soft Skills -->
                 <div class="col">
-                    <h3>Profesionales</h3>
+                    <h3>Soft Skills</h3>
                     <div class="contenedor-skills">
-                        <div class="skill-card">
-                            <i class="fas fa-comments"></i>
-                            <p>Comunicación efectiva</p>
+                        <div class="skill-card"><i class="fas fa-comments"></i>
+                            <p>Effective communication</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-users"></i>
-                            <p>Trabajo en equipo</p>
+                        <div class="skill-card"><i class="fas fa-users"></i>
+                            <p>Teamwork</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Pensamiento crítico y analítico</p>
+                        <div class="skill-card"><i class="fas fa-lightbulb"></i>
+                            <p>Critical and analytical thinking</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-sync-alt"></i>
-                            <p>Adaptabilidad y aprendizaje continuo</p>
+                        <div class="skill-card"><i class="fas fa-sync-alt"></i>
+                            <p>Adaptability & continuous learning</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-handshake"></i>
-                            <p>Habilidades Interpersonales</p>
+                        <div class="skill-card"><i class="fas fa-handshake"></i>
+                            <p>Interpersonal skills</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-paint-brush"></i>
-                            <p>Creatividad</p>
+                        <div class="skill-card"><i class="fas fa-paint-brush"></i>
+                            <p>Creativity</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-clipboard-check"></i>
-                            <p>Responsabilidad, compromiso y ética laboral</p>
+                        <div class="skill-card"><i class="fas fa-clipboard-check"></i>
+                            <p>Responsibility and work ethic</p>
                         </div>
-                        <div class="skill-card">
-                            <i class="fas fa-clock"></i>
-                            <p>Organización y gestión del tiempo</p>
+                        <div class="skill-card"><i class="fas fa-clock"></i>
+                            <p>Time management</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <!-- SECCION PROYECTOS -->
+    <!-- Projects -->
     <section id="proyectos" class="section-proyectos">
         <div class="contenido-seccion">
-            <h2>PROYECTOS</h2>
+            <h2>PROJECTS</h2>
             <div class="galeria">
+                <!-- Each project remains the same visually -->
+                <!-- Only overlay content is translated -->
                 <div class="proyecto">
                     <a href="https://github.com/Fermoyano07/tienda-virtual" target="_blank">
                         <img src="img/tienda.jpeg" alt="">
                         <div class="overlay">
-                            <h3>Tienda en Línea</h3>
+                            <h3>Online Store</h3>
                             <p>.NET Framework</p>
                             <p>MVC</p>
                         </div>
@@ -251,7 +223,7 @@
                         <img src="img/carwash.png" alt="">
                         <div class="overlay">
                             <h3>Car Wash</h3>
-                            <p>Java Persistence Api</p>
+                            <p>Java Persistence API</p>
                             <p>JPA</p>
                         </div>
                     </a>
@@ -260,7 +232,7 @@
                     <a href="https://github.com/Fermoyano07/encode-product-api" target="_blank">
                         <img src="img/productapi.png" alt="">
                         <div class="overlay">
-                            <h3>Product-Api</h3>
+                            <h3>Product API</h3>
                             <p>.NET Core</p>
                         </div>
                     </a>
@@ -269,7 +241,7 @@
                     <a href="https://github.com/Fermoyano07/clinica-medica-net-mvc" target="_blank">
                         <img src="img/clinica.png" alt="">
                         <div class="overlay">
-                            <h3>Clínica Médica</h3>
+                            <h3>Medical Clinic</h3>
                             <p>.NET Core</p>
                             <p>MVC</p>
                         </div>
@@ -279,8 +251,8 @@
                     <a href="https://github.com/Fermoyano07/clinica-medica-api-swagger" target="_blank">
                         <img src="img/clinicaapi.png" alt="">
                         <div class="overlay">
-                            <h3>Clínica Médica Api</h3>
-                            <p>.NET CORE</p>
+                            <h3>Clinic API</h3>
+                            <p>.NET Core</p>
                         </div>
                     </a>
                 </div>
@@ -288,7 +260,7 @@
                     <a href="https://github.com/Fermoyano07/agenda-personal-net-mvc" target="_blank">
                         <img src="img/agenda.png" alt="">
                         <div class="overlay">
-                            <h3>Agenda Personal</h3>
+                            <h3>Personal Agenda</h3>
                             <p>.NET Core</p>
                             <p>MVC</p>
                         </div>
@@ -298,24 +270,23 @@
         </div>
     </section>
 
-    <!-- SECCION CONTACTO -->
+    <!-- Contact -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <p>Si estás interesado en mi perfil o tienes alguna consulta, no dudes en contactarme.</p>
-
+            <h2>CONTACT</h2>
+            <p>If you're interested in my profile or have any questions, feel free to reach out to me.</p>
             <form id="formulario-contacto" class="formulario-contacto" method="POST">
                 <div class="input-group">
-                    <input id="id_nombre" type="text" name="nombre" placeholder="Nombre" required>
-                    <input id="id_email" type="email" name="email" placeholder="Correo electrónico" required>
+                    <input id="id_nombre" type="text" name="nombre" placeholder="Name" required>
+                    <input id="id_email" type="email" name="email" placeholder="Email" required>
                 </div>
-                <textarea id="id_mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                <button type="submit" id="button">Enviar Mensaje</button>
+                <textarea id="id_mensaje" name="mensaje" placeholder="Write your message here..." required></textarea>
+                <button type="submit" id="button">Send Message</button>
             </form>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
@@ -325,13 +296,12 @@
                     class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://github.com/Fermoyano07" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
-        <p>&copy; <span id="year"></span> Fernando Moyano. Desarrolador Full Stack.</p>
+        <p>&copy; <span id="year"></span> Fernando Moyano. Full Stack Developer.</p>
     </footer>
 
-    <!-- DIV MENSAJE ALERTA-->
     <div id="alerta" class="alerta">
         <p id="alerta-mensaje"></p>
-        <button onclick="cerrarAlerta()">Cerrar</button>
+        <button onclick="cerrarAlerta()">Close</button>
     </div>
 
     <script src="script.js"></script>

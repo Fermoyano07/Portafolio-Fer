@@ -20,24 +20,28 @@ function seleccionar(){
 const btn = document.getElementById('button');
 document.getElementById('formulario-contacto')
     .addEventListener('submit', function(event) {
-      event.preventDefault();
+        event.preventDefault();
 
-      const btn = document.getElementById('button');
-      btn.textContent = 'Enviando...';
+        const btn = document.getElementById('button');
+        const isEnglish = window.location.pathname.includes("index-en");
 
-      const serviceID = 'default_service';
-      const templateID = 'template_portfolio';
+        btn.textContent = isEnglish ? 'Sending...' : 'Enviando...';
 
-      emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-        btn.textContent = 'Enviar Mensaje';
-        mostrarAlerta('¡Mensaje enviado con éxito!');
-    }, (err) => {
-        btn.textContent = 'Enviar Mensaje';
-        mostrarAlerta('Error al enviar el mensaje: ' + JSON.stringify(err));
-    });
+        const serviceID = 'default_service';
+        const templateID = 'template_portfolio';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.textContent = isEnglish ? 'Send Message' : 'Enviar Mensaje';
+                mostrarAlerta(isEnglish ? 'Message sent successfully!' : '¡Mensaje enviado con éxito!');
+            }, (err) => {
+                btn.textContent = isEnglish ? 'Send Message' : 'Enviar Mensaje';
+                mostrarAlerta((isEnglish ? 'Error sending message: ' : 'Error al enviar el mensaje: ') + JSON.stringify(err));
+            });
+
         this.reset();
-  });
+    });
+
 
   // MENSAJE ALERTA
   function mostrarAlerta(mensaje) {
